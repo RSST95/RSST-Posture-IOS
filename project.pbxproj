@@ -1,0 +1,172 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F7700000000000000000001 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7700000000000000000011; };
+		5F7700000000000000000002 /* ObservationReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7700000000000000000012; };
+		5F7700000000000000000003 /* Posture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7700000000000000000013; };
+		5F7700000000000000000004 /* RSSTPostureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7700000000000000000014; };
+		5F7700000000000000000005 /* logo_rsst.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F7700000000000000000015; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5F7700000000000000000011 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		5F7700000000000000000012 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationReport.swift; sourceTree = "<group>"; };
+		5F7700000000000000000013 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posture.swift; sourceTree = "<group>"; };
+		5F7700000000000000000014 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSTPostureApp.swift; sourceTree = "<group>"; };
+		5F7700000000000000000015 = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_rsst.png; sourceTree = "<group>"; };
+		5F7700000000000000000016 = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F7700000000000000000017 = {isa = PBXFileReference; explicitFileType = wrapper.application; path = RSSTPosture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F7700000000000000000032 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F7700000000000000000021 = {
+			isa = PBXGroup;
+			children = (5F7700000000000000000022, 5F7700000000000000000023);
+			sourceTree = "<group>";
+		};
+		5F7700000000000000000022 = {
+			isa = PBXGroup;
+			children = (
+				5F7700000000000000000011, 5F7700000000000000000012,
+				5F7700000000000000000013, 5F7700000000000000000014,
+				5F7700000000000000000015, 5F7700000000000000000016,
+			);
+			path = RSSTPosture;
+			sourceTree = "<group>";
+		};
+		5F7700000000000000000023 = {
+			isa = PBXGroup;
+			children = (5F7700000000000000000017);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F7700000000000000000041 /* RSSTPosture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F7700000000000000000062;
+			buildPhases = (5F7700000000000000000031, 5F7700000000000000000032, 5F7700000000000000000033);
+			buildRules = ();
+			dependencies = ();
+			name = RSSTPosture;
+			productName = RSSTPosture;
+			productReference = 5F7700000000000000000017;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F7700000000000000000042 = {
+			isa = PBXProject;
+			attributes = { LastUpgradeCheck = 1640; };
+			buildConfigurationList = 5F7700000000000000000061;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = fr;
+			hasScannedForEncodings = 0;
+			knownRegions = (fr, Base);
+			mainGroup = 5F7700000000000000000021;
+			productRefGroup = 5F7700000000000000000023;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (5F7700000000000000000041);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F7700000000000000000033 = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (5F7700000000000000000005);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F7700000000000000000031 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (5F7700000000000000000001, 5F7700000000000000000002, 5F7700000000000000000003, 5F7700000000000000000004);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5F7700000000000000000051 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5F7700000000000000000052 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5F7700000000000000000053 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = RSSTPosture/Info.plist;
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.rsst.posture.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5F7700000000000000000054 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = RSSTPosture/Info.plist;
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.rsst.posture.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F7700000000000000000061 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (5F7700000000000000000051, 5F7700000000000000000052);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F7700000000000000000062 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (5F7700000000000000000053, 5F7700000000000000000054);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F7700000000000000000042;
+}
