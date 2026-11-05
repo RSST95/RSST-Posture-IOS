@@ -11,6 +11,7 @@
 		5F7700000000000000000003 /* Posture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7700000000000000000013; };
 		5F7700000000000000000004 /* RSSTPostureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7700000000000000000014; };
 		5F7700000000000000000005 /* logo_rsst.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F7700000000000000000015; };
+		5F7700000000000000000006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F7700000000000000000018; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		5F7700000000000000000015 = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_rsst.png; sourceTree = "<group>"; };
 		5F7700000000000000000016 = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F7700000000000000000017 = {isa = PBXFileReference; explicitFileType = wrapper.application; path = RSSTPosture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F7700000000000000000018 = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +40,7 @@
 			children = (
 				5F7700000000000000000011, 5F7700000000000000000012,
 				5F7700000000000000000013, 5F7700000000000000000014,
-				5F7700000000000000000015, 5F7700000000000000000016,
+				5F7700000000000000000015, 5F7700000000000000000016, 5F7700000000000000000018,
 			);
 			path = RSSTPosture;
 			sourceTree = "<group>";
@@ -86,7 +88,7 @@
 		5F7700000000000000000033 = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
-			files = (5F7700000000000000000005);
+			files = (5F7700000000000000000005, 5F7700000000000000000006);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
@@ -128,6 +130,7 @@
 		5F7700000000000000000053 = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = RSSTPosture/Info.plist;
@@ -141,6 +144,7 @@
 		5F7700000000000000000054 = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = RSSTPosture/Info.plist;

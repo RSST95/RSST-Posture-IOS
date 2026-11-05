@@ -20,6 +20,8 @@
     <string>$(MARKETING_VERSION)</string>
     <key>CFBundleVersion</key>
     <string>$(CURRENT_PROJECT_VERSION)</string>
+    <key>ITSAppUsesNonExemptEncryption</key>
+    <false/>
     <key>NSCameraUsageDescription</key>
     <string>RSST Posture utilise la caméra pour capturer et analyser la posture observée.</string>
     <key>UILaunchScreen</key>

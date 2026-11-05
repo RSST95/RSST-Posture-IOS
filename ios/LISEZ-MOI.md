@@ -20,4 +20,23 @@ Le workflow compile pour le simulateur et pour iPhone sans signature. Après cet
 
 Pour un essai depuis un Mac, ouvrez ios/RSSTPosture.xcodeproj dans Xcode, choisissez votre équipe dans **Signing & Capabilities** et lancez l’app sur l’iPhone connecté.
 
-Pour installer via TestFlight, il reste à ajouter une icône d’application, enregistrer l’identifiant iOS dans votre compte Apple Developer, puis configurer la signature et l’envoi vers App Store Connect. Le workflow de compilation de cette archive ne produit pas de fichier installable.
+## Publier une bêta via TestFlight
+
+1. Activez une adhésion à l’[Apple Developer Program](https://developer.apple.com/programs/enroll/). Dans le compte Apple Developer, enregistrez un identifiant d’app explicite pour fr.rsst.posture.ios. Créez ensuite la fiche **RSST Posture** pour iOS dans [App Store Connect](https://appstoreconnect.apple.com/), avec cet identifiant.
+2. Préparez un certificat **Apple Distribution** exporté au format .p12 avec sa clé privée et un [profil de distribution App Store Connect](https://developer.apple.com/help/account/provisioning-profiles/create-an-app-store-provisioning-profile/) pour le même certificat et identifiant. Créez une [clé d’équipe App Store Connect](https://developer.apple.com/documentation/appstoreconnectapi/creating-api-keys-for-app-store-connect-api) avec le rôle Developer pour l’envoi du build.
+3. Dans **Settings → Secrets and variables → Actions** du dépôt GitHub, ajoutez les éléments suivants.
+
+| Emplacement | Nom | Valeur |
+| --- | --- | --- |
+| Variables | APPLE_TEAM_ID | Identifiant de l’équipe Apple Developer |
+| Secrets | APPLE_CERTIFICATE_BASE64 | Fichier .p12 encodé en Base64 |
+| Secrets | APPLE_CERTIFICATE_PASSWORD | Mot de passe du .p12 |
+| Secrets | APPLE_PROFILE_BASE64 | Fichier .mobileprovision encodé en Base64 |
+| Secrets | ASC_KEY_ID | Identifiant de la clé App Store Connect |
+| Secrets | ASC_ISSUER_ID | Identifiant de l’émetteur App Store Connect |
+| Secrets | ASC_PRIVATE_KEY | Contenu intégral du fichier .p8 |
+
+4. Dans **Actions → Envoyer RSST Posture à TestFlight**, lancez le workflow avec **Run workflow** sur la branche principale. Il signe le build et l’envoie à App Store Connect.
+5. Une fois le traitement terminé, ouvrez **TestFlight** dans la fiche de l’app, créez un groupe de test interne et ajoutez-y le build et les testeurs autorisés. L’installation se fait ensuite dans l’app TestFlight sur l’iPhone.
+
+Saisissez les valeurs de signature uniquement dans **Secrets** sur GitHub. La compilation ordinaire reste disponible sans compte Apple et produit un build sans signature.
